@@ -54,6 +54,17 @@ export default function Signup() {
     if (!formData.phoneNumber.trim() ) {
       newErrors.phoneNumber = 'Phone number is required';
     }
+    if (formData.phoneNumber.trim().length!==10 ) {
+      newErrors.phoneNumber = 'Phone number must be 10 digits long';
+    }
+    
+    if(!/^\d+$/.test(formData.phoneNumber)){
+      newErrors.phoneNumber="Phone number must contain only digits";
+    }
+    
+
+    
+    
   
     
     if (!formData.emailAddress.trim()) {

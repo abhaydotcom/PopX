@@ -43,6 +43,7 @@ export default function Login() {
       newErrors.emailAddress = 'Please enter a valid email address';
     }
     
+    
     if (!formData.password.trim()) {
       newErrors.password = 'Password is required';
     }
