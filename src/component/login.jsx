@@ -34,6 +34,8 @@ export default function Login() {
     }
   };
 
+  
+
   const validateForm = () => {
     const newErrors = {};
     
@@ -42,7 +44,7 @@ export default function Login() {
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.emailAddress)) {
       newErrors.emailAddress = 'Please enter a valid email address';
     }
-    
+
     
     if (!formData.password.trim()) {
       newErrors.password = 'Password is required';

@@ -62,8 +62,6 @@ export default function Signup() {
       newErrors.phoneNumber="Phone number must contain only digits";
     }
     
-
-    
     
   
     
@@ -143,7 +141,7 @@ export default function Signup() {
               name="phoneNumber"
               value={formData.phoneNumber}
               onChange={handleInputChange}
-              placeholder="Marry Doe"
+              placeholder="9310009890"
               className={`w-full px-3 py-3 border rounded-lg bg-gray-50 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent ${
                 errors.phoneNumber ? 'border-red-500' : 'border-gray-200'
               }`}
@@ -163,7 +161,7 @@ export default function Signup() {
               name="emailAddress"
               value={formData.emailAddress}
               onChange={handleInputChange}
-              placeholder="Marry Doe"
+              placeholder="MarryDoe@gmail.com"
               className={`w-full px-3 py-3 border rounded-lg bg-gray-50 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent ${
                 errors.emailAddress ? 'border-red-500' : 'border-gray-200'
               }`}
@@ -183,7 +181,7 @@ export default function Signup() {
               name="password"
               value={formData.password}
               onChange={handleInputChange}
-              placeholder="Marry Doe"
+              placeholder="Marry123"
               className={`w-full px-3 py-3 border rounded-lg bg-gray-50 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent ${
                 errors.password ? 'border-red-500' : 'border-gray-200'
               }`}
@@ -203,7 +201,7 @@ export default function Signup() {
               name="companyName"
               value={formData.companyName}
               onChange={handleInputChange}
-              placeholder="Marry Doe"
+              placeholder="Marry Doe pvt ltd"
               className="w-full px-3 py-3 border border-gray-200 rounded-lg bg-gray-50 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
             />
           </div>
